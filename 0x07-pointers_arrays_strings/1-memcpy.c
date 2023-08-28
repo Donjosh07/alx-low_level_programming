@@ -6,16 +6,17 @@
  * @src: Memory where the data is copied from.
  * @n: Number of bytes to copy.
  *
- * Return: A pointer to the destination memory.
+ * Return: copied memory with n bytes changed
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	int r = 0;
+	int r = 0
+	int i = n;
 
-	for (; r < n; r++)
+	for (; r < i; r++)
 	{
 	dest[r] = src[r];
+	n--;
 	}
 	return (dest);
 }
-
